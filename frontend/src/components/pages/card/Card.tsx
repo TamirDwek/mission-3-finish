@@ -9,7 +9,7 @@ interface CardProps {
 
 export default function Card(props:CardProps):JSX.Element{
 
-const { groupId, meetingStartingTime, meetingDescription, meetingRoom} = props.meeting
+const { groupId, meetingStartingTime, meetingDescription,meetingRoom} = props.meeting
 
 
 
@@ -17,7 +17,7 @@ return (
     <div className='Card'>
         <h4>Meeting Description:{meetingDescription}</h4>
         <p>Meeting Room: {meetingRoom}</p>
-        <p>Meeting Time: {meetingStartingTime}</p>
+        <p>Starting Time: {meetingStartingTime}</p>
         <p>Group Id: {groupId}</p>
         
     </div>

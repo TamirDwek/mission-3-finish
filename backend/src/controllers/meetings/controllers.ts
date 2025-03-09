@@ -2,7 +2,7 @@ import { NextFunction, Response, Request } from "express";
 import Meetings from "../../models/meetings";
 import DevelopmentGroups from "../../models/developmentGroups";
 
-export async function geMeetingByGroupId(
+export async function getMeetingByGroupId(
   req: Request<{ id: string }>,
   res: Response,
   next: NextFunction
@@ -12,7 +12,7 @@ export async function geMeetingByGroupId(
 
     const meeting = await Meetings.findAll({
       where: { groupId},
-      include: [{ model: DevelopmentGroups, as: "developmentGroup" }]
+      include: [{ model: DevelopmentGroups }]
     });
     res.json(meeting);
   } catch (e) {
