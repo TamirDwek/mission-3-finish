@@ -1,0 +1,84 @@
+/* .Layout {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 3fr 3fr 1fr;
+    min-height: 0;
+    /* Important for nested grids /
+}
+
+.Layout> {
+    overflow: auto;
+    /* Adds scrollbars when content overflows /
+    min-height: 0;
+    / Allows content to shrink /
+    min-width: 0;
+    / Allows content to shrink horizontally */
+/* } */
+
+/* .Layout>header {
+    grid-row: 1;
+    padding: 10px;
+    border-bottom: solid rgb(206, 42, 42) 1px;
+}
+
+
+.Layout main {
+    grid-row: 2;
+    padding: 10px;
+}
+.Layout {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    min-height: 0; */
+    /* Important for nested grids /
+}
+
+.Layout> {
+    overflow: auto;
+    /* Adds scrollbars when content overflows /
+    min-height: 0;
+    / Allows content to shrink /
+    min-width: 0;
+    / Allows content to shrink horizontally */
+/* }
+
+.Layout>header {
+    grid-row: 1;
+    padding: 10px;
+    border-bottom: solid rgb(241, 28, 28) 1px;
+}
+
+
+.Layout main {
+    grid-row: 2;
+    padding: 10px;
+}  */
+  /* layout.css */
+.Layout {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.Layout header {
+    background: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.Layout main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Layout footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

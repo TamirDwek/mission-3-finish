@@ -1,0 +1,23 @@
+{
+    "app":{
+        "port":"3015",
+        "name": "meeting management",
+        "secret": "MySecret",   
+        "jwtSecret": "MyJwtSecret"
+
+    },
+    "db":{
+        "host": "localhost",
+        "port":3306,
+        "username" : "root",
+        "password":  "",
+        "database": "meeting management"
+    },
+    "sequelize":{
+        "logging":true,
+        "sync":{
+            "force": false
+        }
+    }
+    
+}
