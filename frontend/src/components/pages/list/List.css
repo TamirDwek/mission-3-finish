@@ -1,0 +1,19 @@
+/* List.css */
+.List {
+    text-align: center;
+    padding: 20px;
+}
+
+.jobsSelection select {
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.List .employees {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
